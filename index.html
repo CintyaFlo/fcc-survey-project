@@ -10,7 +10,81 @@
 </head>
 
 <body>
+    <h1 id="title">Formulário de Avaliação Docente - Geografia</h1>
+    <p id="description"> Obrigada por ajudar a melhorar a prática pedagógica</p>
+    <form id="survey-form">
+        <label id="name-label" for="name">Name (obrigatório): </label>
+        <input id="name" type="text" name="name" required placeholder="Insira seu nome" />
+        <label id="email-label" for="email">Email (obrigatório): </label>
+        <input id="email" type="email" name="email" required placeholder="insira seu email" />
+        <label id="number-label" for="age"> Idade (opcional): </label>
+        <input id="number" type="number" name="number" min="12" max="25" placeholder="idade" />
 
+        <p>Qual o seu Curso?</p>
+        <select name="Curso" id="dropdown" required>
+            <option value="Agropecuária">Agropecuária</option>
+            <option value="Meio Ambiente">Meio Ambiente</option>
+            <option value="Agroindústia">Agroindústia</option>
+        </select>
+        <p>Qual sua série?</p>
+        <select name="serie" id="Dropdown" required>
+            <option value="1°">1° Ano</option>
+            <option value="3°">3° Ano</option>
+        </select>
+
+        <p>Como você avalia a aula de Geografia?</p>
+        <label>
+            <input name="description" type="radio" value="dinamica"> Dinâmica e aprendo
+        </label>
+        <label>
+            <input name="description" type="radio" value="Dinamica nao aprendo"> Dinãmica mas não aprendo
+        </label>
+        <label>
+            <input name="description" type="radio" value="Boa"> Bem Insensionada mas não aprendo
+        </label>
+        <label>
+            <input name="description" type="radio" value="Cansativa"> Cansativa
+        </label>
+
+        <p>Quais opções abaixo auxiliam no seu aprendizado?</p>
+        <label>
+            <input name="aprendizado" type="checkbox" value="Atividades em grupo"> Atividades em grupo
+        </label>
+        <label>
+            <input name="aprendizado" type="checkbox" value="Atividadeduais"> Atividadeduais
+        </label>
+        <label>
+            <input name="aprendizado" type="checkbox" value="Seminários"> Seminários
+        </label>
+        <label>
+            <input name="aprendizado" type="checkbox" value="Provas"> Provas
+        </label>
+        <label>
+            <input name="aprendizado" type="checkbox" value="Pesquisas"> Pesquisas
+        </label>
+        <label>
+            <input name="aprendizado" type="checkbox" value="Exercicios práticos"> Exercicios práticos
+        </label>
+        <label>
+            <input name="aprendizado" type="checkbox" value="Dinâmicas competitivas"> Dinâmicas competitivas
+        </label>
+        <label>
+            <input name="aprendizado" type="checkbox" value="Dinâmicas cooperativas"> Dinâmicas cooperativas
+        </label>
+
+        <p>Alguma estratégia diferente das citadas acima poderia te ajudar?</p>
+        <label>
+            <input name="outra opçao" type="radio" value="dinamica"> Sim
+        </label>
+        <label>
+            <input name="outra opçao" type="radio" value="Dinamica nao aprendo"> Não
+        </label>
+
+        <p>Qual?</p>
+        <textarea id="sugestions" name="sugestions" placeholder="Insira sua sugestão aqui"></textarea>
+
+        <input type="submit" value="Enviar" id="submit">
+    </form>
 </body>
 
 </html>
