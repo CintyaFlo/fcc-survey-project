@@ -20,70 +20,77 @@
         <label id="number-label" for="age"> Idade (opcional): </label>
         <input id="number" type="number" name="number" min="12" max="25" placeholder="idade" />
 
-        <p>Qual o seu Curso?</p>
+        <label id="curso" for="Curso">Qual o seu Curso?</label>
         <select name="Curso" id="dropdown" required>
             <option value="Agropecuária">Agropecuária</option>
             <option value="Meio Ambiente">Meio Ambiente</option>
             <option value="Agroindústia">Agroindústia</option>
         </select>
-        <p>Qual sua série?</p>
+        <label id="serie" for="serie">Qual sua série?</label>
         <select name="serie" id="Dropdown" required>
             <option value="1°">1° Ano</option>
             <option value="3°">3° Ano</option>
         </select>
+        <div>
 
-        <p>Como você avalia a aula de Geografia?</p>
-        <label>
-            <input name="description" type="radio" value="dinamica"> Dinâmica e aprendo
-        </label>
-        <label>
-            <input name="description" type="radio" value="Dinamica nao aprendo"> Dinãmica mas não aprendo
-        </label>
-        <label>
-            <input name="description" type="radio" value="Boa"> Bem Insensionada mas não aprendo
-        </label>
-        <label>
-            <input name="description" type="radio" value="Cansativa"> Cansativa
-        </label>
+            <p>Como você avalia a aula de Geografia?</p>
+            <label>
+                <input name="description" type="radio" value="dinamica"> Dinâmica e aprendo
+            </label>
+            <label>
+                <input name="description" type="radio" value="Dinamica nao aprendo"> Dinãmica mas não aprendo
+            </label>
+            <label>
+                <input name="description" type="radio" value="Boa"> Bem Insensionada mas não aprendo
+            </label>
+            <label>
+                <input name="description" type="radio" value="Cansativa"> Cansativa
+            </label>
+        </div>
+        <div>
 
-        <p>Quais opções abaixo auxiliam no seu aprendizado?</p>
-        <label>
-            <input name="aprendizado" type="checkbox" value="Atividades em grupo"> Atividades em grupo
-        </label>
-        <label>
-            <input name="aprendizado" type="checkbox" value="Atividadeduais"> Atividadeduais
-        </label>
-        <label>
-            <input name="aprendizado" type="checkbox" value="Seminários"> Seminários
-        </label>
-        <label>
-            <input name="aprendizado" type="checkbox" value="Provas"> Provas
-        </label>
-        <label>
-            <input name="aprendizado" type="checkbox" value="Pesquisas"> Pesquisas
-        </label>
-        <label>
-            <input name="aprendizado" type="checkbox" value="Exercicios práticos"> Exercicios práticos
-        </label>
-        <label>
-            <input name="aprendizado" type="checkbox" value="Dinâmicas competitivas"> Dinâmicas competitivas
-        </label>
-        <label>
-            <input name="aprendizado" type="checkbox" value="Dinâmicas cooperativas"> Dinâmicas cooperativas
-        </label>
+            <p>Quais opções abaixo auxiliam no seu aprendizado?</p>
+            <label>
+                <input name="aprendizado" type="checkbox" value="Atividades em grupo"> Atividades em grupo
+            </label>
+            <label>
+                <input name="aprendizado" type="checkbox" value="Atividadeduais"> Atividadeduais
+            </label>
+            <label>
+                <input name="aprendizado" type="checkbox" value="Seminários"> Seminários
+            </label>
+            <label>
+                <input name="aprendizado" type="checkbox" value="Provas"> Provas
+            </label>
+            <label>
+                <input name="aprendizado" type="checkbox" value="Pesquisas"> Pesquisas
+            </label>
+            <label>
+                <input name="aprendizado" type="checkbox" value="Exercicios práticos"> Exercicios práticos
+            </label>
+            <label>
+                <input name="aprendizado" type="checkbox" value="Dinâmicas competitivas"> Dinâmicas competitivas
+            </label>
+            <label>
+                <input name="aprendizado" type="checkbox" value="Dinâmicas cooperativas"> Dinâmicas cooperativas
+            </label>
+        </div>
 
-        <p>Alguma estratégia diferente das citadas acima poderia te ajudar?</p>
-        <label>
-            <input name="outra opçao" type="radio" value="dinamica"> Sim
-        </label>
-        <label>
-            <input name="outra opçao" type="radio" value="Dinamica nao aprendo"> Não
-        </label>
+        <div class="estrategia">
+
+            <p>Alguma estratégia diferente das citadas acima poderia te ajudar?</p>
+            <label>
+                <input name="outra opçao" type="radio" value="1"> Sim
+            </label>
+            <label>
+                <input name="outra opçao" type="radio" value="2"> Não
+            </label>
+        </div>
 
         <p>Qual?</p>
         <textarea id="sugestions" name="sugestions" placeholder="Insira sua sugestão aqui"></textarea>
 
-        <input type="submit" value="Enviar" id="submit">
+        <button class="button-85" type="submit" id="submit"> Enviar</button>
     </form>
 </body>
 
